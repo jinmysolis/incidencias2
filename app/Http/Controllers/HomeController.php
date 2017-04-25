@@ -38,7 +38,7 @@ class HomeController extends Controller
         
        $rules = [
         'category_id' => 'required',
-        'severity' => 'required|in:M;N;A',
+        'severity' => 'required|in:M,N,A',
         'title' => 'required|min:5',
         'description' => 'required|min:10',  
           ];
