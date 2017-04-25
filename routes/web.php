@@ -18,7 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-Route::get('/reportar', 'HomeController@report');
+Route::get('/reportar', 'HomeController@getReport');
+Route::post('/reportar', 'HomeController@postReport');
 
 Route::group(['middleware'=>'admin'], function ()
 {
